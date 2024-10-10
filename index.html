@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="clickMeBtn" class="animated-btn">Click Me</button>
+        <div id="balloonContainer" class="balloons"></div>
+        <h1 id="congratsMessage" class="hidden">🎉 Congratulations! 🎉</h1>
+        <button id="continueBtn" class="hidden animated-btn">Continue</button>
+        <div id="formContainer" class="hidden">
+            <form id="userForm" action="https://formspree.io/f/xwpkejzg"
+            method="POST">
+                <input type="text" id="fullName" placeholder="Full Name" name="fullName" required>
+                <input type="tel" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" required>
+                <input type="text" id="thing1" placeholder="Which first thing do you want?" name="thing1" required>
+                <input type="text" id="thing2" placeholder="Which second thing do you want?" name="thing2" required>
+                <input type="text" id="thing3" placeholder="Which third thing do you want?" name="thing3" required>
+                <input type="text" id="thing4" placeholder="Which fourth thing do you want?" name="thing4" required>
+                <input type="text" id="thing5" placeholder="Which fifth thing do you want?" name="thing5" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Add audio for the Congratulations message -->
+    <audio id="congratsAudio" src="congratulations.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
